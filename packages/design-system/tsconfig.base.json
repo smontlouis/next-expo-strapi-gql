@@ -27,14 +27,7 @@
     "strictNullChecks": true,
     "target": "es2019",
     "types": ["node"],
-    "lib": ["es2021", "dom", "esnext"],
-    "include": ["src"],
-    "compilerOptions": {
-      "composite": true,
-      "esModuleInterop": true,
-      "jsx": "preserve"
-    },
-    "references": []
+    "lib": ["es2021", "dom", "esnext"]
   },
   "include": ["src"],
   "references": [],

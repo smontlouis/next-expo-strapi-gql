@@ -6,12 +6,12 @@
     "apps/*"
   ],
   "scripts": {
-    "native": "yarn ui build cd apps/native && expo start",
-    "web": "yarn ui build cd apps/web && yarn next",
+    "native": "yarn workspace @my-app/native",
+    "web": "yarn workspace @my-app/web",
+    "ui": "yarn workspace @my-app/ui",
     "postinstall": "yarn ui build && husky install",
     "upgrade:tamagui": "manypkg upgrade tamagui && manypkg upgrade @tamagui && manypkg upgrade tamagui-loader",
-    "sync:tamagui": "${TAMAGUI_PATH:-$HOME/tamagui}/starters-sync.sh",
-    "ui": "yarn workspace @my-app/ui"
+    "sync:tamagui": "${TAMAGUI_PATH:-$HOME/tamagui}/starters-sync.sh"
   },
   "config": {
     "commitizen": {
