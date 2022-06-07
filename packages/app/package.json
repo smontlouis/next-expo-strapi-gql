@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "name": "@my-app/common",
+  "name": "@my-app/app",
   "main": "index.ts",
   "dependencies": {
     "@my-app/ui": "*",

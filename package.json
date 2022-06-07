@@ -8,7 +8,9 @@
   "scripts": {
     "native": "yarn workspace @my-app/native",
     "web": "yarn workspace @my-app/web",
+    "api": "yarn workspace @my-app/api",
     "ui": "yarn workspace @my-app/ui",
+    "common": "yarn workspace @my-app/common",
     "postinstall": "yarn ui build && husky install",
     "upgrade:tamagui": "manypkg upgrade tamagui && manypkg upgrade @tamagui && manypkg upgrade tamagui-loader",
     "sync:tamagui": "${TAMAGUI_PATH:-$HOME/tamagui}/starters-sync.sh",
