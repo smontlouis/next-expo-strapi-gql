@@ -1,12 +1,4 @@
-import {
-  Anchor,
-  Button,
-  H1,
-  Paragraph,
-  Separator,
-  XStack,
-  YStack,
-} from '@my-app/ui'
+import { Anchor, Button, H1, Paragraph, Separator, XStack, YStack } from '@my-app/ui'
 import { Drawer } from '@tamagui/drawer'
 import { ChevronDown, ChevronUp } from '@tamagui/feather-icons'
 import React, { useState } from 'react'
@@ -23,8 +15,8 @@ export function HomeScreen() {
       <YStack space="$4" maw={600}>
         <H1 ta="center">Welcome to Tamagui.</H1>
         <Paragraph ta="center">
-          Here's a basic starter to show navigating from one screen to another.
-          This screen uses the same code on Next.js and React Native.
+          Here's a basic starter to show navigating from one screen to another. This screen uses the
+          same code on Next.js and React Native.
         </Paragraph>
         <Separator />
         <Paragraph ta="center">
@@ -33,11 +25,7 @@ export function HomeScreen() {
             Nate Wienert
           </Anchor>
           , give it a star{' '}
-          <Anchor
-            href="https://github.com/tamagui/tamagui"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Anchor href="https://github.com/tamagui/tamagui" target="_blank" rel="noreferrer">
             on Github
           </Anchor>
           .
@@ -65,13 +53,7 @@ function DrawerDemo() {
         onPress={() => setShow((x) => !x)}
       />
       <Drawer open={show} onChangeOpen={setShow}>
-        <Drawer.Frame
-          h={dimensions.height * 0.8}
-          ai="center"
-          jc="center"
-          p="$6"
-          space
-        >
+        <Drawer.Frame h={dimensions.height * 0.8} ai="center" jc="center" p="$6" space>
           <Paragraph selectable={false}>Hello.</Paragraph>
           <Button
             size="$6"

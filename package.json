@@ -11,7 +11,8 @@
     "ui": "yarn workspace @my-app/ui",
     "postinstall": "yarn ui build && husky install",
     "upgrade:tamagui": "manypkg upgrade tamagui && manypkg upgrade @tamagui && manypkg upgrade tamagui-loader",
-    "sync:tamagui": "${TAMAGUI_PATH:-$HOME/tamagui}/starters-sync.sh"
+    "sync:tamagui": "${TAMAGUI_PATH:-$HOME/tamagui}/starters-sync.sh",
+    "lint": "yarn workspaces lint"
   },
   "config": {
     "commitizen": {

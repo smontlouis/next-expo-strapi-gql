@@ -8,7 +8,9 @@
     "android": "TAMAGUI_TARGET=native yarn expo run:android",
     "ios": "TAMAGUI_TARGET=native yarn expo run:ios",
     "web": "TAMAGUI_TARGET=web yarn expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "lint": "eslint && yarn type-check",
+    "type-check": "bash -c tsc --project tsconfig.json --pretty --noEmit"
   },
   "dependencies": {
     "@babel/runtime": "^7.17.9",
@@ -36,6 +38,9 @@
     "@types/react": "~17.0.21",
     "@types/react-native": "^0.67.4",
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "eslint": "^8.17.0",
+    "eslint-config-universe": "^11.0.0",
+    "prettier": "^2.6.2",
     "typescript": "^4.6.3"
   }
 }
