@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "yarn ui build && next dev",
+    "dev": "cd .. && yarn ui build && cd web && next dev",
     "build": "yarn ui build && next build",
     "start": "next start",
     "lint": "next lint && yarn type-check",

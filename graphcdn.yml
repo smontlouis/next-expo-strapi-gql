@@ -1,0 +1,12 @@
+name: boilerplate
+originUrl: 'my-app.com/graphql'
+schema: 'packages/api/schema.graphql'
+scopes:
+  AUTHENTICATED: 'cookie:boilerplate.session.token|header:Authorization'
+rules:
+  - description: Cache everything (default)
+    maxAge: 900
+    scope: PUBLIC
+    swr: 900
+    types:
+      Query: true
