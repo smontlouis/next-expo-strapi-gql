@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cd .. && yarn ui build && cd web && next dev",
-    "build": "yarn ui build && next build",
+    "dev": "yarn workspace @my-app/ui build && next dev",
+    "build": "yarn workspace @my-app/ui build && next build",
     "start": "next start",
     "lint": "next lint && yarn type-check",
     "type-check": "bash -c tsc --project tsconfig.json --pretty --noEmit"
